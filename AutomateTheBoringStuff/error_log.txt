@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "U:/25/Library/Desktop/StartingPython/example_exception2.py", line 6, in boxPrint
+    raise Exception ("Symbol can only have 1 char")
+Exception: Symbol can only have 1 char
