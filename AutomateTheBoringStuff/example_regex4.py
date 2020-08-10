@@ -81,7 +81,9 @@ print(mo.group())
 mo = regex.search("He said 'HaHaHaHaHa'")
 print(mo.group())
 mo = regex.search("He said 'HaHaHaHaHaHa'")
-print(mo.group())
+print("HaHaHaHaHaHa:" + mo.group())
+mo = regex.findall("He said 'HaHaHaHaHaHa'")
+print(mo)
 
 #match smallest/fastest possible match
 regex = re.compile(r"(\d){3,5}") 
