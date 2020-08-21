@@ -9,3 +9,6 @@
   
 ## To challenge  
 [Codewars/Python](https://www.codewars.com/kata/search/python?q=&&beta=false)  
+  
+## Reference  
+Built-in Functions usage examples.  

@@ -24,26 +24,25 @@
 # --------e--------
 
 
-
 def print_rangoli(size):
     # your code goes here
 
     alphabets = "abcdefghijklmnopqrstuvwxyz"
     maxLength = (size*2-1) + (size-1)*2
-
     #eqn for max length
         #(3*2-1) + (3-1)*2 # 5+4=9
         #(10*2-1) + (10-1)*2 #19+18=37
         
     rangoliList = []
 
+### slicing version(shorter)
     for _ in range(size):
         rangoli = "-".join(alphabets[_:size])
         rangoliList.append((rangoli[::-1] + rangoli[1:]).center(maxLength,"-"))
 
     print("\n".join(rangoliList[::-1]+rangoliList[1:]))
 
-#---second try
+### slicing version
     # print first half
     # for _ in range(size-1, 0, -1):
         # rangoli = "-".join(alphabets[_:size])
@@ -54,7 +53,7 @@ def print_rangoli(size):
         # rangoli = "-".join(alphabets[_:size])
         # print((rangoli[::-1] + rangoli[1:]).center(maxLength,"-"))
 
-#---first try
+### initial version
     # print first half
     # for _ in range(size):
         # rangoli = ""
