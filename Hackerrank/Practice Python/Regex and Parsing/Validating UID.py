@@ -28,6 +28,7 @@ import re
 ### Final answer
 for _ in range(int(input())):
     print( "Valid" if re.search(r"^(?!.*(.).*\1)(?=(?:.*[A-Z]){2,})(?=(?:.*[0-9]){3,})[a-zA-Z0-9]{10}$", input()) else "Invalid" )
+    # print( "Valid" if re.match(r"^(?!.*(.).*\1)(?=(?:.*[A-Z]){2,})(?=(?:.*[0-9]){3,})[a-zA-Z0-9]{10}$", input()) else "Invalid" )
 
 ### Alternate cleaner/re-usable regex answer
 # two_or_more_uppercase = r"(.*[A-Z]){2,}"

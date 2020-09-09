@@ -1,5 +1,5 @@
 # https://www.hackerrank.com/challenges/re-split/problem?isFullScreen=true
-# Problem : Complete regex pattern
+# Problem : Split input into output by completing regex pattern.
 
 # Sample Input 0
 # 100,000,000.000

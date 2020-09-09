@@ -13,9 +13,7 @@
 
 import re
 
-# start with 7,8,9 [7-9])
-# (?=(?:###)) to include the above in search, insert at ### position 
-# 10 digit [0-9]{10}
 
 for _ in range(int(input())):
-    print( "Valid" if re.search(r"^(?=(?:[7-9]))[0-9]{10}$", input()) else "Invalid" )
+    # print( "YES" if re.search(r"^(?=(?:[7-9]))[0-9]{10}$", input()) else "NO" )
+    print( "YES" if re.match(r"^[7-9][0-9]{9}$", input()) else "NO" )
